@@ -13,7 +13,6 @@ Para perceber como funcionam os sistemas de empréstimo de bicicletas em context
 
 - U-Bike IPBeja — Como Funciona: https://www.ipbeja.pt/sas/gaad/U-Bike/Paginas/ComoFunciona.aspx
 - U-Bike IPBeja — Site do projeto: https://bika4.webnode.pt/
-- U-Bike IPLeiria — App iOS: https://apps.apple.com/us/app/u-bike-ipleiria-oficial/id1458601446
 - U-Bike IPLeiria — Página oficial: https://www.ipleiria.pt/en/live/student-life/u-bike/
 - IPBike (IPBragança): http://ipbike.ipb.pt/PT_ipbike.html
 - Portal Alentejano — U-Bike IPBeja: https://www.portalalentejano.com/projeto-u-bike-ipbeja/
