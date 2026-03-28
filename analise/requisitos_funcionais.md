@@ -11,3 +11,13 @@
 - RF09	O sistema deve permitir a devolução da bicicleta em qualquer estação da rede Ator - Estudante
 - RF10	O sistema deve enviar notificações push por email sobre reservas, lembretes e alertas Ator - Sistema
 - RF11	O sistema deve apresentar o histórico de viagens do utilizador com métricas detalhadas Ator - Estudante
+- RF12	O sistema deve disponibilizar um dashboard de saúde com estatísticas acumuladas	Ator - Estudante	
+- RF13	O sistema deve permitir ao utilizador reportar avarias ou danos nas bicicletas	Ator - Estudante	
+- RF14	O administrador deve poder gerir a frota (adicionar, atualizar, remover bicicletas)	Ator - Admin	
+- RF15	O administrador deve poder visualizar estatísticas de uso em tempo real	Ator - Admin	
+- RF16	O administrador deve poder gerar relatórios de uso, eficiência e saúde	Ator - Admin	
+- RF17	O sistema deve monitorizar o nível de bateria das bicicletas elétricas	Ator - Sistema
+- RF18	O administrador deve poder agendar manutenção preventiva das bicicletas	Ator - Admin	
+- RF19	O sistema deve incluir um sistema de gamificação com pontos e ranking (leaderboard) Ator - Estudante	
+- RF20	O sistema deve gerir o processo de candidatura/aprovação de novos utilizadores Ator -	Admin
+
