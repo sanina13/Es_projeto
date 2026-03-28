@@ -9,7 +9,7 @@
 - RF07  O sistema deve calcular e apresentar a eficiência energética de cada viagem (kWh consumidos / km) Ator - Sistema
 - RF08  O sistema deve calcular calorias consumidas e CO₂ poupado comparando com deslocação de carro Ator - Sistema
 - RF09	O sistema deve permitir a devolução da bicicleta em qualquer estação da rede Ator - Estudante
-- RF10	O sistema deve enviar notificações push por email sobre reservas, lembretes e alertas Ator - Sistema
+- RF10	O sistema deve enviar notificações (push e/ou email) sobre reservas, lembretes e alertas Ator - Sistema
 - RF11	O sistema deve apresentar o histórico de viagens do utilizador com métricas detalhadas Ator - Estudante
 - RF12	O sistema deve disponibilizar um dashboard de saúde com estatísticas acumuladas	Ator - Estudante	
 - RF13	O sistema deve permitir ao utilizador reportar avarias ou danos nas bicicletas	Ator - Estudante	
