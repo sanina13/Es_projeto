@@ -34,5 +34,5 @@
 
 
 
-| 1.1 | 2025-03-28 | sanina13 | Correções: prioridades, RF07 energia, RF06 reserva, RF10 notificações separadas; adicionados RF03, RF05, RF07 (limite reservas), RF08 (cancelar), RF20 (estações) |
+
 
