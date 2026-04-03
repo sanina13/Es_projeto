@@ -1,0 +1,140 @@
+# UC-01 — Registar-se
+
+**Projeto:** U-Bike IPBeja  
+**UC:** Engenharia de Software 2025/2026  
+**Fase:** Análise — Especificação de Caso de Uso  
+
+---
+
+## 1. Identificação
+
+| Campo              | Detalhe                        |
+|--------------------|-------------------------------|
+| **ID**             | UC-01                         |
+| **Nome**           | Registar-se                   |
+| **Ator principal** | Estudante                     |
+| **Atores secundários** | Sistema de Autenticação Institucional |
+| **Versão**         | 1.0                           |
+| **Data**           | 2025/2026                     |
+
+---
+
+## 2. Descrição
+
+O estudante cria uma conta na plataforma U-Bike utilizando o seu email institucional do IPBeja, ficando habilitado a reservar e utilizar bicicletas.
+
+---
+
+## 3. Pré-condições
+
+- O estudante não tem conta registada na plataforma.
+- O estudante possui um email institucional válido (@ipbeja.pt).
+- O sistema de autenticação institucional está disponível.
+
+---
+
+## 4. Pós-condições
+
+- A conta do estudante é criada e fica no estado **pendente de confirmação**.
+- O estudante recebe um email de confirmação no endereço institucional.
+- Após confirmação, a conta fica no estado **ativa**.
+
+---
+
+## 5. Fluxo Principal
+
+| Passo | Ator | Ação |
+|-------|------|------|
+| 1 | Estudante | Acede à página de registo da plataforma U-Bike. |
+| 2 | Estudante | Preenche o formulário com: nome completo, email institucional, password e confirmação de password. |
+| 3 | Estudante | Submete o formulário. |
+| 4 | Sistema | Valida os dados introduzidos (formato, campos obrigatórios). |
+| 5 | Sistema | Verifica junto do Sistema de Autenticação Institucional que o email pertence à instituição. |
+| 6 | Sistema | Cria a conta com estado *pendente de confirmação*. |
+| 7 | Sistema | Envia email de confirmação para o endereço institucional do estudante. |
+| 8 | Estudante | Acede ao email e clica no link de confirmação. |
+| 9 | Sistema | Ativa a conta e redireciona o estudante para a página de login. |
+
+---
+
+## 6. Fluxos Alternativos
+
+### FA-01 — Email já registado (passo 4)
+1. O sistema deteta que o email introduzido já existe na base de dados.
+2. O sistema apresenta a mensagem: *"Este email já se encontra registado. Por favor, faça login ou recupere a sua password."*
+3. O caso de uso termina sem criar conta.
+
+### FA-02 — Email não pertence à instituição (passo 5)
+1. O Sistema de Autenticação Institucional rejeita o email.
+2. O sistema apresenta a mensagem: *"O email introduzido não é reconhecido como institucional. Utilize o seu email @ipbeja.pt."*
+3. O estudante pode corrigir o email e resubmeter (retorna ao passo 2).
+
+### FA-03 — Password não cumpre requisitos (passo 4)
+1. O sistema deteta que a password não cumpre os requisitos mínimos (ex: mínimo 8 caracteres).
+2. O sistema apresenta os requisitos em falta.
+3. O estudante corrige a password e resubmete (retorna ao passo 2).
+
+### FA-04 — Link de confirmação expirado (passo 8)
+1. O estudante clica num link de confirmação expirado (válido por 24 horas).
+2. O sistema apresenta a mensagem: *"O link de confirmação expirou."*
+3. O sistema oferece a opção de reenviar o email de confirmação.
+4. O caso de uso retorna ao passo 7.
+
+---
+
+## 7. Exceções
+
+### EX-01 — Sistema de Autenticação Institucional indisponível (passo 5)
+1. O sistema não consegue contactar o Sistema de Autenticação Institucional.
+2. O sistema apresenta a mensagem: *"Serviço temporariamente indisponível. Por favor, tente novamente mais tarde."*
+3. O caso de uso termina sem criar conta.
+
+### EX-02 — Falha no envio do email (passo 7)
+1. O sistema não consegue enviar o email de confirmação.
+2. O sistema regista o erro internamente.
+3. O sistema informa o estudante e oferece a opção de reenviar o email.
+
+---
+
+## 8. User Story
+
+> Como **estudante do IPBeja**, quero **criar uma conta na plataforma U-Bike**, para **poder reservar e utilizar as bicicletas disponíveis no campus**.
+
+---
+
+## 9. Critérios de Aceitação
+
+**Cenário 1 — Registo bem-sucedido**
+
+**Dado que** o estudante possui um email institucional válido e ainda não tem conta,  
+**Quando** preenche o formulário corretamente e submete,  
+**Então** o sistema deve criar a conta, enviar o email de confirmação e apresentar uma mensagem de sucesso.
+
+---
+
+**Cenário 2 — Email já registado**
+
+**Dado que** o email introduzido já existe na plataforma,  
+**Quando** o estudante submete o formulário de registo,  
+**Então** o sistema deve informar que o email já está registado e não deve criar uma conta duplicada.
+
+---
+
+**Cenário 3 — Email não institucional**
+
+**Dado que** o estudante introduz um email que não pertence ao IPBeja,  
+**Quando** submete o formulário,  
+**Então** o sistema deve rejeitar o registo e solicitar um email @ipbeja.pt.
+
+---
+
+## 10. Diagrama de Sequência (referência)
+
+> A elaborar no Visual Paradigm na fase de Desenho.
+
+---
+
+## Referências
+
+- Requisitos funcionais relacionados: RF-01, RF-02
+- Casos de uso relacionados: UC-02 (Autenticar-se)
