@@ -79,7 +79,7 @@ O sistema U-Bike envolve **4 atores**, divididos em dois tipos:
 - **Tipo:** Secundário (ator externo)  
 - **Descrição:** Representa o serviço de autenticação do IPBeja (ex: LDAP ou SSO institucional) que valida as credenciais dos utilizadores. A plataforma U-Bike delega a verificação de identidade neste sistema.  
 - **Motivação:** Não tem motivação própria — é invocado sempre que um utilizador tenta autenticar-se na plataforma.  
-- **Pré-condições de acesso:** Utilizador com credenciais institucionais válidas (email @ipbeja.pt).  
+- **Pré-condições de acesso:** Utilizador com credenciais institucionais válidas (email @stu.ipbeja.pt ou @ipbeja.pt).  
 - **Interações principais com o sistema:**
 - Validar credenciais do utilizador (email + password)
 - Confirmar identidade para autorizar acesso à plataforma
