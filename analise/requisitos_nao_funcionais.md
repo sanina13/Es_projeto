@@ -128,9 +128,6 @@
 ---
 
 ## Referências
-- WCAG 2.1: https://www.w3.org/TR/WCAG21/
-- RGPD: https://eur-lex.europa.eu/legal-content/PT/TXT/?uri=CELEX%3A32016R0679
-- ISO/IEC 25010 — Modelo de qualidade de software
 
 
 - WCAG 2.1: https://www.w3.org/TR/WCAG21/
