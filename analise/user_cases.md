@@ -12,9 +12,7 @@
 - UC-10 — Consultar indicadores pessoais
 - UC-11 — Editar perfil
 - UC-12 — Gerir utilizadores
-- UC-13 — Validar credenciais
-- UC-14 — Registar dados de percurso
-- UC-15 — Gerir frota de bicicletas
-- UC-16 — Consultar relatórios globais
-- UC-17 — Consultar indicadores agregados
-- UC-18 — Configurar sistema
+- UC-13 — Gerir frota de bicicletas
+- UC-14 — Consultar relatórios globais
+- UC-15 — Consultar indicadores agregados
+- UC-16 — Configurar sistema
